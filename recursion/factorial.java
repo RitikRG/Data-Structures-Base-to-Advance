@@ -1,19 +1,17 @@
-package functionsAndMethods_practise;
+package recursion;
 
 import java.util.Scanner;
 
-public class factorialQues {
-    
-    public static long factorial(int n){
-        if(n<=1){
+public class factorial {
+    public static int factorial(int n){
+        if(n<=0){
             return 1;
         }
         return n*factorial(n-1);
     }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.print("Enter the value of n: ");
-        int n=sc.nextInt();
+        int n= sc.nextInt();
         System.out.println(factorial(n));
     }
 }
